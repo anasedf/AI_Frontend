@@ -1,0 +1,158 @@
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#content .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 72rem;
+    margin: 4rem 0px 2.5rem;
+}
+
+#content .logo img {
+    height: 6.4rem;
+    width: 6.4rem;
+}
+
+#content .head {
+    text-align: center;
+    font-size: 4.6rem;
+    font-weight: 300;
+    color: rgb(79, 79, 79)
+}
+
+#content .spam {
+    font-weight: bold;
+}
+
+#content .detail {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(79, 79, 79)
+}
+
+
+#content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 50rem;
+    row-gap: 2rem;
+}
+
+#content .box {
+    background-color: white;
+    border: 0.2rem solid rgb(224, 224, 224);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 20rem;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+#content .button {
+    border: 2px solid rgb(79, 79, 79);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    padding: 16px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#content .button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#content .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#content .result {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #4f4f4f;
+    text-align: left;
+}
+
+#content .probspam {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+#content .circlespam {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(248, 80, 80);
+    border-radius: 100%;
+}
+#content .probham {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+#content .circleham {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(83, 243, 109);
+    border-radius: 100%;
+}
+
+#content .line {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#content .line img {
+    width: 60px;
+    height: 60px;
+}
+
+#content .clound {
+    background-color: #95c98e;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 250px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1000px) {
+    #content .container {
+        width: 80%;
+        max-width: 50rem;
+        max-height: 30rem;
+    }
+}
