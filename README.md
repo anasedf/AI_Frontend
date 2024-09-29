@@ -1,8 +1,13 @@
-# React + Vite
+# SPAM CHECKER Front-end Source Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This repository is the JavaScript-based front-end for the Spam Checker web app, which connects to a LINE bot for spam message detection.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## CLI Commands
+```
+npm install 
+npm run dev
+```
+## API 
+This project uses the API from https://github.com/inwchamp1337/flaskspamhambackend.git
