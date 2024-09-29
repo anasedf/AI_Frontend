@@ -78,7 +78,7 @@ function Content() {
 
             <section className="line">
                 <section className="clound">
-                    Ok Thank you
+                    Add เราเป็นเพื่อนเลย
                 </section>
                 <img
                     src="./src/assets/line.png"
