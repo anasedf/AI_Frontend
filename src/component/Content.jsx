@@ -41,7 +41,7 @@ function Content() {
 
             <section className="nav">
                 <section className="logo">
-                    <img src="/src/assets/bot.jpg"></img>
+                    <img src="/src/assets/logo.png"></img>
                 </section>
                 <section className="head">
                     <span className="spam">SPAM</span> CHECKER
@@ -80,9 +80,13 @@ function Content() {
                 <section className="clound">
                     Add เราเป็นเพื่อนเลย
                 </section>
-                <img
-                    src="./src/assets/line.png"
-                />
+                <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=434oopur" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="./src/assets/line.png"
+                        alt="Add us on lone"
+                    />
+                </a>
+
             </section>
         </section>
     )
