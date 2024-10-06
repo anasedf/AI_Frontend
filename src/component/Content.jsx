@@ -13,17 +13,17 @@ function Content() {
     // ฟังก์ชันสำหรับตรวจสอบข้อความโดยใช้ API
     const checkSpam = async () => {
         try {
-            const response = await fetch('https://50f9-203-150-171-154.ngrok-free.app/predict', {
+            const response = await fetch('https://28cb-125-25-13-161.ngrok-free.app/predict', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ message: text })  // ส่งข้อความไปที่ API
+                body: JSON.stringify({ text: text })  // ส่งข้อความไปที่ API
             });
-
             if (!response.ok) {
                 throw new Error("API response was not ok");  // ตรวจสอบว่า API ตอบกลับถูกต้องหรือไม่
             }
+
 
             const data = await response.json();  // ดึงข้อมูล JSON จาก API
             setPrediction(data.prediction[0]);  // เก็บผลลัพธ์การทำนาย (Spam หรือ Ham)
