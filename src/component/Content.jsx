@@ -44,7 +44,7 @@ function Content() {
                     <img src="/src/assets/logo.png"></img>
                 </section>
                 <section className="head">
-                    <span className="spam">SPAM</span> CHECKER
+                    <span className="spam">KHUNTHONG</span> PHU
                 </section>
                 <section className="detail">
                     เช็คข้อความสแปมได้เลย
@@ -59,7 +59,7 @@ function Content() {
                     onChange={(e) => setText(e.target.value)}
                 ></textarea>
                 <button className="button" onClick={checkSpam}>
-                    Check
+                    CHECK
                 </button>
                 <section className="result">
                     <section className="predic">
