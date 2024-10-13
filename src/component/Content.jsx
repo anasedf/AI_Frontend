@@ -13,7 +13,7 @@ function Content() {
     // ฟังก์ชันสำหรับตรวจสอบข้อความโดยใช้ API
     const checkSpam = async () => {
         try {
-            const response = await fetch('https://28cb-125-25-13-161.ngrok-free.app/predict', {
+            const response = await fetch('https://serviceapi-demo-644030095619.asia-east1.run.app/predict', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -27,8 +27,8 @@ function Content() {
 
             const data = await response.json();  // ดึงข้อมูล JSON จาก API
             setPrediction(data.prediction[0]);  // เก็บผลลัพธ์การทำนาย (Spam หรือ Ham)
-            setHamProbability(data.prediction[1]);  // เก็บความน่าจะเป็นว่าไม่ใช่สแปม
-            setSpamProbability(data.prediction[2]);  // เก็บความน่าจะเป็นว่าเป็นสแปม
+            setHamProbability(data.prediction[2]);  // เก็บความน่าจะเป็นว่าไม่ใช่สแปม
+            setSpamProbability(data.prediction[1]);  // เก็บความน่าจะเป็นว่าเป็นสแปม
             setError(null);  // รีเซ็ตข้อผิดพลาด
         } catch (err) {
             console.error("Error checking spam:", err);
